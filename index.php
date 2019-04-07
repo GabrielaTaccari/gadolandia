@@ -5,6 +5,7 @@
     define('USER', 'Gabriela');
     define('SENHA', '897612');
     ActiveRecord\Config::initialize(
+        
         function ($cfg) {
             $cfg->set_model_directory( __DIR__ . '/app/sts/model');
             $cfg->set_connections(
