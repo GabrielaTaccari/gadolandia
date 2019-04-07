@@ -1,9 +1,11 @@
 <?php
     require __DIR__.'/vendor/autoload.php';
+
     define('HOST', 'localhost');
     define('DATABASE', 'gadolandia');
     define('USER', 'Gabriela');
     define('SENHA', '897612');
+    
     ActiveRecord\Config::initialize(
         
         function ($cfg) {
