@@ -1,6 +1,6 @@
 <?php
     namespace ActiveRecord;
-    class Conn {
+    class Conn {    
         const HOST = "localhost";
         const DATABASE = "gadolandia";
         const USER = "root";
