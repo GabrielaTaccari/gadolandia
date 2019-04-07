@@ -4,7 +4,7 @@
         const HOST = "localhost";
         const DATABASE = "gadolandia";
         const USER = "root";
-        const SENHA = "";
+        const SENHA = "897612";
         
         public function __construct(){
             

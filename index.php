@@ -2,8 +2,8 @@
     require __DIR__.'/vendor/autoload.php';
     define('HOST', 'localhost');
     define('DATABASE', 'gadolandia');
-    define('USER', 'root');
-    define('SENHA', '');
+    define('USER', 'Gabriela');
+    define('SENHA', '897612');
     ActiveRecord\Config::initialize(
         function ($cfg) {
             $cfg->set_model_directory( __DIR__ . '/app/sts/model');
