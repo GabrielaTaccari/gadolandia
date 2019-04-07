@@ -6,6 +6,7 @@ define('DB_PASS', '897612');
 
 
 define('ABS_PATH', dirname(__FILE__));
+
 if(isset( $_SERVER['HTTPS']))
     define('HOME_URI', 'https://'.$_SERVER['HTTP_HOST'].'/gadolandia');
 else
@@ -13,4 +14,4 @@ else
 
 define('DEBUG', true);
 
-require_once(ABS_PATH.'loader.php');
+require_once(ABS_PATH.'\loader.php');
