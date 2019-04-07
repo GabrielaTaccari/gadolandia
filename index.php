@@ -20,10 +20,18 @@
     });
 
     // $conexao = new \ActiveRecord\Conn();
-    $gado = new Gado();
-    $gado->nome='Vitor';
-    $gado->email='vitor.biansil@gmail.com';
-    $gado->senha='souviado123';
-    $gado->save();
+    // $gado = new Gado();
+    // $gado->nome='Vitor';
+    // $gado->email='vitor.biansil@gmail.com';
+    // $gado->senha='souviado123';
+    // $gado->save();
+    $nome = 'Vitor';
+    $gado = Gado::find('all', ['conditions'=>['nome=?', $nome]]);
+    //echo dirname(__FILE__) . '/rola.html';
+    $tpl = new Core\Template(dirname(__FILE__).'\\rola.html');
+    $tpl->gadinho=$gado;
+    $tpl->show();
+
+
     
     
