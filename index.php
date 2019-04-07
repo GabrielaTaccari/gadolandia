@@ -1,5 +1,6 @@
 <?php
     require __DIR__.'/vendor/autoload.php';
+    //require __DIR__.'/Template.php';
 
     define('HOST', 'localhost');
     define('DATABASE', 'gadolandia');
@@ -25,11 +26,15 @@
     // $gado->email='vitor.biansil@gmail.com';
     // $gado->senha='souviado123';
     // $gado->save();
+
     $nome = 'Vitor';
-    $gado = Gado::find('all', ['conditions'=>['nome=?', $nome]]);
-    //echo dirname(__FILE__) . '/rola.html';
-    $tpl = new Core\Template(dirname(__FILE__).'\\rola.html');
-    $tpl->gadinho=$gado;
+    $gado = Gado::first('all', ['conditions'=>['nome=?', $nome]]);
+    // echo "<pre>";
+    // print_r($gado);
+    // echo "</pre>";
+    $tpl = new Core\Template(dirname(__FILE__).'\\core\\rola.html');
+    echo $gado->nome;
+    $tpl->gadinho=$gado->nome;
     $tpl->show();
 
 
