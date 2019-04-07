@@ -1,0 +1,25 @@
+{
+    "name":"Gadolandia",
+    "description": "Dedo no cu e gritaria",
+    "authors" : [
+        {
+            "name":"Gabriela Gonçalves Taccari",
+            "email":"taccary.gabi@gmail.com"
+        },
+
+        {
+            "name":"Vitor Bianchi da Silva",
+            "email":"vitor.biansil@gmail.com"
+        }
+
+    ],
+    "require": {
+        "php-activerecord/php-activerecord": "^1.2"
+    },
+    "autoload":{
+        "psr-4": {
+            "Sts\\":"app/sts",
+            "Core\\":"core"
+        }
+    }
+}

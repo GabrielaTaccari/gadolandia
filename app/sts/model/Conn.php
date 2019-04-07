@@ -1,0 +1,12 @@
+<?php
+    namespace ActiveRecord;
+    class Conn {
+        const HOST = "localhost";
+        const DATABASE = "gadolandia";
+        const USER = "root";
+        const SENHA = "";
+        
+        public function __construct(){
+            
+        }
+    }

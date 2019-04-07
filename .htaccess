@@ -1,0 +1,14 @@
+#ativar engine de reescrita de URL
+ReWriteEngine On 
+
+#condições
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-l
+
+#regras
+RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
+
+
+
+
