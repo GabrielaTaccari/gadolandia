@@ -1,5 +1,4 @@
 <?php
-    require __DIR__ . '/vendor/autoload.php';
 
     if(!defined('ABS_PATH'))
         exit;
@@ -13,5 +12,8 @@
         error_reporting(E_ALL);
         ini_set('display_error', 1);
     }
+
+
+    require __DIR__ . '/vendor/autoload.php';
 
     $gadolandia = new Core\Gadolandia();
