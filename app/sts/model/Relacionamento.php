@@ -1,4 +1,5 @@
 <?php
-    class Relacionamento extends ActiveRecord\Model{
 
-    }
+class Relacionamento {
+
+}
