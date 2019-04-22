@@ -13,13 +13,20 @@ class ComposerStaticInit7c88f3ea0b89a7a29e4c396aa1488c7d
     );
 
     public static $prefixLengthsPsr4 = array (
+        'c' => 
+        array (
+            'core\\' => 5,
+        ),
+        'a' => 
+        array (
+            'app\\' => 4,
+        ),
         'S' => 
         array (
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Contracts\\' => 18,
             'Symfony\\Component\\Translation\\' => 30,
             'Symfony\\Component\\Console\\' => 26,
-            'Sts\\' => 4,
         ),
         'P' => 
         array (
@@ -47,12 +54,19 @@ class ComposerStaticInit7c88f3ea0b89a7a29e4c396aa1488c7d
         ),
         'C' => 
         array (
-            'Core\\' => 5,
             'Carbon\\' => 7,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
+        'core\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/core',
+        ),
+        'app\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app',
+        ),
         'Symfony\\Polyfill\\Mbstring\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
@@ -68,10 +82,6 @@ class ComposerStaticInit7c88f3ea0b89a7a29e4c396aa1488c7d
         'Symfony\\Component\\Console\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/console',
-        ),
-        'Sts\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/app/sts',
         ),
         'Psr\\SimpleCache\\' => 
         array (
@@ -135,10 +145,6 @@ class ComposerStaticInit7c88f3ea0b89a7a29e4c396aa1488c7d
             1 => __DIR__ . '/..' . '/doctrine/event-manager/lib/Doctrine/Common',
             2 => __DIR__ . '/..' . '/doctrine/persistence/lib/Doctrine/Common',
             3 => __DIR__ . '/..' . '/doctrine/reflection/lib/Doctrine/Common',
-        ),
-        'Core\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/core',
         ),
         'Carbon\\' => 
         array (
