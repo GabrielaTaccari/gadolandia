@@ -1,54 +1,26 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Dashboard</title>
-    <link rel="stylesheet" type="text/css" href="{csslink}">
-</head>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Dashboard</title>
+        <link rel="stylesheet" type="text/css" href="home.css">
+        <script type="text/javascript" src="home.js"></script>
+    </head>
 
 <body class="app">
-    <!-- @TOC -->
-    <!-- =================================================== -->
-    <!--
-      + @Page Loader
-      + @App Content
-          - #Left Sidebar
-              > $Sidebar Header
-              > $Sidebar Menu
-
-          - #Main
-              > $Topbar
-              > $App Screen Content
-    -->
-
-    <!-- @Page Loader -->
-    <!-- =================================================== -->
     <div id='loader'>
         <div class="spinner"></div>
     </div>
 
-    <script>
-        window.addEventListener('load', () => {
-            const loader = document.getElementById('loader');
-            setTimeout(() => {
-                loader.classList.add('fadeOut');
-            }, 300);
-        });
-    </script>
-
-    <!-- @App Content -->
-    <!-- =================================================== -->
     <div>
-        <!-- #Left Sidebar ==================== -->
         <div class="sidebar">
             <div class="sidebar-inner">
-                <!-- ### $Sidebar Header ### -->
                 <div class="sidebar-logo">
                     <div class="peers ai-c fxw-nw">
                         <div class="peer peer-greed">
-                            <a class="sidebar-link td-n" href="index.html">
+                            <a class="sidebar-link td-n" href="#">
                                 <div class="peers ai-c fxw-nw">
                                     <div class="peer">
                                         <div class="logo">
@@ -240,8 +212,6 @@
                 </ul>
             </div>
         </div>
-
-        <!-- #Main ============================ -->
         <div class="page-container">
             <!-- ### $Topbar ### -->
             <div class="header navbar">
